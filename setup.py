@@ -29,18 +29,7 @@ class build_ext(_build_ext):
 
 
 setup(name='pypesq',
-      version='1.2.4',
-      description="A package to compute pesq score.",
-      url='https://github.com/vBaiCai/python-pesq',
-      author_email='zhuroubaicai@gmail.com',
-      keywords=['pesq', 'speech', 'speech quality'],
-      license='MIT',
-      packages=find_packages(),
-      ext_modules=[extension],
-      cmdclass={'build_ext': build_ext},
-      setup_requires=['numpy'],
-      py_modules=['numpy'],
-      zip_safe=False,
-      install_requires=['numpy'],
-      python_requires='!=3.0.*, !=3.1.*, !=3.2.*, <4',
-      )
+    packages=find_packages(),
+    ext_modules=[extension],
+    cmdclass={'build_ext': build_ext},
+)
